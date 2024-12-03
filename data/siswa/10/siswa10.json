@@ -1,0 +1,34 @@
+[
+  {
+    "nama": "Fadhra Dzaki Susanto",
+    "username": "siswa10-001",
+    "password": "10-49106f",
+    "tingkat": "10",
+    "kelas": "Merdeka 2",
+    "isLoggedin": false
+  },
+  {
+    "nama": "fasd",
+    "username": "siswa10-002",
+    "password": "10-4338f6",
+    "tingkat": "10",
+    "kelas": "Merdeka 1",
+    "isLoggedin": false
+  },
+  {
+    "nama": "dania rizky maulita",
+    "username": "siswa10-003",
+    "password": "10-484bac",
+    "tingkat": "10",
+    "kelas": "Merdeka 2",
+    "isLoggedin": false
+  },
+  {
+    "nama": "kania irwan",
+    "username": "siswa10-004",
+    "password": "10-ff0637",
+    "tingkat": "10",
+    "kelas": "Merdeka 1",
+    "isLoggedin": false
+  }
+]

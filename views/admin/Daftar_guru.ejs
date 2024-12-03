@@ -1,0 +1,37 @@
+<div class="container-fluid">
+
+    <h3>Halaman Daftar Guru</h3>
+    <h5>Berikut daftar guru yang terdaftar:</h5>
+    
+    <!-- Tabel Daftar guru -->
+     <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Status Login</th> <!-- Menampilkan status login -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Loop untuk menampilkan data guru -->
+                <% guru.forEach(function(guru) { %>
+                    
+                    <tr>
+                        
+                        <td><%= guru.username %></td> <!-- Menampilkan username guru -->
+                        <% if (guru.status === 'Online'){%>
+                            <td class="table-success"><%= guru.status %></td>
+                        <%}else{%>
+                            <td class="table-danger"><%= guru.status %></td>
+                            <%}%>
+                           <!-- Menampilkan status login -->
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+     </div>
+    
+    <a href="/logout" class="logout-link">Log out</a>
+</div>
+
+<script src="../../utils/admin/admin.js"></script>

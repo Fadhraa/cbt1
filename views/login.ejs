@@ -1,0 +1,37 @@
+<% if (message) { %>
+  <% if (success === false) { %> <!-- Jika login gagal -->
+      <div class="alert alert-danger">
+          <%= message %>  <!-- Pesan error seperti "Email tidak terdaftar" atau "Password salah" -->
+      </div>
+  <% } else { %> <!-- Jika login berhasil -->
+      <div class="alert alert-success">
+          <%= message %>  <!-- Pesan sukses seperti "Login berhasil" -->
+      </div>
+  <% } %>
+<% } %>
+<div class="form-Login">
+
+  <form action="/login" method="POST">
+    <h1>Login</h1>
+    <div class="username">
+      <label for="username" class="form-label">Username</label>
+      <input type="text" id="username" name="username" required placeholder="masukan Username">
+      <div class="line"></div>
+    </div>
+    <div class="password">
+      <label for="password" class="form-label">Password</label>
+      <input type="password"  id="password" name="password" required placeholder="masukan password anda">
+      <div class="line"></div>
+    </div>
+
+    <button type="submit" class="btn-submit">Login</button>
+    <a href="/register">Belum punya akun?</a>
+</form>
+</div>
+
+<div class="ocean">
+  <div class="wave"></div>
+  <div class="wave"></div>
+</div>
+
+  

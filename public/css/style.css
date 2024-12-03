@@ -1,0 +1,138 @@
+body{
+    overflow: hidden;
+}
+nav{
+    background-color: #277E90;
+    display: flex;
+    position: relative;
+    color: white;
+    align-items: center;
+    height: 70px;
+
+}
+nav h1{
+    margin-left: 40px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+}
+nav ul li{
+    margin: 30px;
+    list-style: none;
+    display: inline;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.alert{
+    position: absolute;
+    width: 100%;
+
+}
+.form-Login {
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.form-Login form{
+    width: 100%;
+    max-width: 400px; /* Lebar maksimal */
+    padding: 20px;
+    margin: 50px auto; /* Agar box login berada di tengah halaman */
+    background-color: #ffffffef; /* Warna background putih */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+    border-radius: 8px; /* Membuat sudut-sudut lebih halus */
+    box-sizing: border-box; 
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-Login form .username,
+.form-Login form .password,
+.form-Login form .email{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 20px;
+}
+.form-Login form .username .line,
+.form-Login form .password .line,
+.form-Login form .email .line{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(67, 142, 179);
+    height: 2px;
+    bottom: 0;
+    box-sizing: border-box;
+}
+.form-Login form input{
+    border: none;
+    padding: 10px 0;
+}
+
+.form-Login form input:focus{
+    outline: none;
+}
+button{
+    width: 220px;
+    height: 40px;
+    background-color: #4ba7ba;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0;
+    color: white;
+}
+.ocean { 
+    height: 5%;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background: #015871;
+  }
+  
+  .wave {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+  }
+  
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  
+  @keyframes swell {
+    0%, 100% {
+      transform: translate3d(0,-25px,0);
+    }
+    50% {
+      transform: translate3d(0,5px,0);
+    }
+  }

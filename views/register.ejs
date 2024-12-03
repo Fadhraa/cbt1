@@ -1,0 +1,45 @@
+
+<% if (typeof message !== 'undefined' && success === false) { %>
+    <div class="alert alert-warning">
+        <%= message %>
+    </div>
+<% } else if (typeof message !== 'undefined' && success === true) { %>
+    <div class="alert alert-success">
+        <%= message %>
+    </div>
+<% } %>
+<div class="form-Login">
+
+    <form method="POST" action="/register">
+        <h1>Register</h1>
+        <div class="username">
+            <label for="username">username:</label>
+            <input type="text" id="username" name="username" required>
+            <div class="line"></div>
+        </div>
+        <div class="email">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <div class="line"></div>
+        </div>
+        <div class="password">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="line"></div>
+        </div>
+        <div>
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+                <option value="guru">Guru</option>
+                <option value="admin">Admin</option>
+                <option value="siswa">Siswa</option>
+            </select>
+        </div>
+        <button type="submit">Register</button>
+        <a href="/login">Sudah punya akun?</a>
+    </form>
+</div>
+<div class="ocean">
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>

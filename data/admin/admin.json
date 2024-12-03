@@ -1,0 +1,9 @@
+[
+  {
+    "username": "admin1",
+    "email": "sasad@fada",
+    "password": "123",
+    "role": "admin",
+    "isLoggedin": true
+  }
+]

@@ -1,0 +1,6 @@
+<h1>Selamat datang, <%= username %>!</h1>
+<h3>Halaman admin</h3>
+<p>Anda berhasil login sebagai <%=user%>.</p>
+<% if (user) { %>
+    <a href="/logout?username=<%= username %>&role=<%= user %> %>">Logout</a>
+<% } %>

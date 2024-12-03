@@ -1,0 +1,28 @@
+/* Halaman daftar Siswa */
+:root{
+    --primary-color:#3092a5;
+    --secondary-color:blue
+}
+
+.table-container{
+    width: 800px;
+    height: auto;
+    overflow: auto;
+    margin: 10px 0;
+}
+table tr,
+table th,
+table td{
+    border: 1px solid black;
+}
+#Tambah_siswa{
+    width: 150px;
+    background-color: var(--primary-color);
+    transition: 0.25s;
+    font-size: 16px;
+}#Tambah_siswa:hover{
+    width: 150px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background-color: #5ebed1;
+}
