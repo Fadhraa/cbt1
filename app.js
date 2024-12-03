@@ -10,6 +10,7 @@ const port = 3000;
 const path = require('path')
 const fs = require('fs')
 app.use(express.static('public')); // Folder statis untuk file CSS, gambar, dll.
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true })); // Untuk memproses data dari form
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs'); // Menggunakan EJS sebagai template engine
